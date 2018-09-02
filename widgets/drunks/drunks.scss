@@ -1,0 +1,37 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #dc5945;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.3);
+$tick-color:        rgba(0, 0, 0, 0.4);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-drunks {
+
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+
+  &.large h3 {
+    font-size: 65px;
+  }
+
+  .subtext {
+    font-size: 25px;
+  }
+}

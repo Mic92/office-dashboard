@@ -1,0 +1,37 @@
+<% content_for :title do %>My super sweet dashboard<% end %>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Drunks" data-id="drunks" data-title="Office dr(i|u)nks" data-text="foo" data-time="01 Jan 1970 00:00:00 GMT"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="DailyXKCD" data-id="xkcd-of-the-day"></div>
+    </li>
+
+<!--
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="number" data-id="count", data-difference="1" data-current="10"></div>
+    </li>
+-->
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="firealarms" data-view="Firealarms" data-date="2018-08-30 17:50:00"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="code" data-view="Code" data-title="Code of the Day" data-snippet="auto concat = [] (auto l1, auto l2) { 
+  auto access1 = [=] (auto ...p) { 
+    auto access2 = [=] (auto ...q) { 
+      return list(p...,q...); 
+    }; 
+    return l2(access2); 
+  }; 
+  return l1(access1); 
+  };" data-moreinfo="code"></div>
+    </li>
+
+  </ul>
+  <center><div style="font-size: 12px"><a href="https://github.com/Mic92/office-dashboard">https://github.com/Mic92/office-dashboard</a></div></center>
+</div>

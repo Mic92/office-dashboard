@@ -1,0 +1,33 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #4b4b4b;
+$value-color:       #fff;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$updated-color:     rgba(0, 0, 0, 0.3);
+
+// ----------------------------------------------------------------------------
+// Widget-number styles
+// ----------------------------------------------------------------------------
+.widget-firealarms {
+
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+  }
+
+  .value {
+    color: $value-color;
+  }
+
+  .subtitle {
+    font-size: 25px;
+    color: $value-color;
+  }
+
+  .updated-at {
+    color: $updated-color;
+  }
+}
