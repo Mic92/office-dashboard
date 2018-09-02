@@ -1,5 +1,8 @@
+{
+  pkgs ? import <nixpkgs> {}
+}:
 
-with import <nixpkgs> {};
+with pkgs;
 
 let 
   gems = bundlerEnv {
