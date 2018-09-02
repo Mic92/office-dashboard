@@ -32,7 +32,7 @@ in stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out
     cp -r $src/* $out
-    rm $out/history.yml
+    rm -rf $out/history.yml
 
     makeWrapper ${gems}/bin/bundle $out/bin/office-dashboard \
       --add-flags "exec smashing start" \
