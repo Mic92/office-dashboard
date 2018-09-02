@@ -1,7 +1,7 @@
 require 'net/imap'
 require 'mail'
-require 'classifier'
-require 'mail_extract'
+#require 'classifier'
+#require 'mail_extract'
 require 'pry'
 
 def fetch_mails(imap, ids)
