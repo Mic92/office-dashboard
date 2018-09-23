@@ -35,7 +35,7 @@ def get_random_xkcd
 end
 
 # Check if provided xkcd was published yesterday
-def published_yesterday_and_unseen(xkcd_date)
+def published_yesterday_and_unseen(xkcd_date, xkcd)
 	xkcd_date == Date.today.prev_day and ($prev_displayed_xkcd.nil? or not $prev_displayed_xkcd['num'] == xkcd['num'])
 end
 
@@ -53,7 +53,7 @@ SCHEDULER.every '1d', :first_in => 0 do |job|
 		xkcd['month'].to_i,
 		xkcd['day'].to_i
 	)
-	if xkcd_date == Date.today or published_yesterday_and_unseen(xkcd_date)
+	if xkcd_date == Date.today or published_yesterday_and_unseen(xkcd_date, xkcd)
 		$displayed_xkcd = xkcd
 	else
 		$displayed_xkcd = get_random_xkcd

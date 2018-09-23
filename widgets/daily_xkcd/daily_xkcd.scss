@@ -19,6 +19,7 @@ $updated-at-color: rgba(0, 0, 0, 0.3);
 .widget-daily-xkcd {
   background-color: $background-color;
   vertical-align: top !important;
+  padding: 8px 12px !important;
 
   .wrapper {
     max-height: 100%;
@@ -31,7 +32,7 @@ $updated-at-color: rgba(0, 0, 0, 0.3);
     font-variant: small-caps;
   }
 
-  .xkcd-image { }
+  .xkcd-image {}
 
   .date {
     color: $published-color;
@@ -52,6 +53,6 @@ $updated-at-color: rgba(0, 0, 0, 0.3);
     position: relative;
     padding: 0;
     margin: 0;
-    bottom:0;
+    bottom: 0;
   }
 }
