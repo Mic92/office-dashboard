@@ -2,6 +2,8 @@
 
 based on [smashing](https://github.com/Smashing/smashing)
 
+Accessible from university network under: http://dashboard.thalheim.io:3030/sample
+
 ## ssh
 
 ```console
