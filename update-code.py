@@ -9,7 +9,7 @@ def main() -> None:
     if len(sys.argv) < 2:
         print(f"{sys.argv[0]} FILE", file=sys.stderr)
         sys.exit(1)
-    url = 'http://0.0.0.0:3030/widgets/code'
+    url = 'http://dashboard.thalheim.io:3030/widgets/code'
 
     with open(sys.argv[1]) as code:
         post_fields = json.dumps({'snippet': code.read()})
