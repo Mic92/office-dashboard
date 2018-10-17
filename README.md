@@ -52,6 +52,12 @@ Listening on 0.0.0.0:3030, CTRL+C to stop
 $ curl -d '{ "time": "2018-09-12 18:30:00" }' http://dashboard.thalheim.io:3030/widgets/drunks
 ```
 
+## Update firealarms
+
+```console
+$ curl http://dashboard.thalheim.io:3030/widgets/firealarms --data '{"alarm-date": "2018-10-13 11:30", "test-alarm-date": "2018-10-04 11:30"}'
+```
+
 ## Update code of the day
 
 ```console
