@@ -22,6 +22,7 @@ in stdenv.mkDerivation {
     bashInteractive
     gnumake
     gems
+    nodejs
   ];
   nativeBuildInputs = [
     makeWrapper
