@@ -6,6 +6,8 @@ Accessible from university network under: http://dashboard.thalheim.io:3030/samp
 
 Hardware: [rock64](https://www.pine64.org/?page_id=7147)
 
+Monitoring: [netdata](http://dashboard.thalheim.io:19999)
+
 Software:
   - Operating system: [nixos](https://nixos.org/)
   - Configuration: https://github.com/Mic92/dotfiles/blob/master/nixos/vms/rock.nix
