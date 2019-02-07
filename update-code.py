@@ -12,9 +12,9 @@ def main() -> None:
     url = 'http://dashboard.thalheim.io:3030/widgets/code'
 
     with open(sys.argv[1]) as code:
-        post_fields = json.dumps({'snippet': code.read()})
+        post_fields = json.dumps({'snippet': code.read()}, ensure_ascii=True)
 
-    req = Request(url, data=post_fields.encode())
+    req = Request(url, data=post_fields.encode(), headers={'Content-type': 'text/json'})
     with urlopen(req) as f:
         print(f.read().decode('utf-8'))
 
