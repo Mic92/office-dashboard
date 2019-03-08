@@ -52,6 +52,12 @@ Listening on 0.0.0.0:3030, CTRL+C to stop
 $ curl -d '{ "time": "2018-09-12 18:30:00" }' http://dashboard.thalheim.io:3030/widgets/drunks
 ```
 
+## Update birthday
+
+```console
+$ curl -d '{ "birthday-title": "Christof'"'"'s birthsday", "birthday_time": "2019-06-26 00:00:00" }' http://dashboard.thalheim.io:3030/widgets/drunks  
+```
+
 ## Update code of the day
 
 ```console
