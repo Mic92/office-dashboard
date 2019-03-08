@@ -6,6 +6,8 @@ Accessible from university network under: http://dashboard.thalheim.io:3030/samp
 
 Hardware: [rock64](https://www.pine64.org/?page_id=7147)
 
+Monitoring: [netdata](http://dashboard.thalheim.io:19999)
+
 Software:
   - Operating system: [nixos](https://nixos.org/)
   - Configuration: https://github.com/Mic92/dotfiles/blob/master/nixos/vms/rock.nix
@@ -56,6 +58,11 @@ $ curl -d '{ "time": "2018-09-12 18:30:00" }' http://dashboard.thalheim.io:3030/
 
 ```console
 $ curl -d '{ "birthday-title": "Christof'"'"'s birthsday", "birthday_time": "2019-06-26 00:00:00" }' http://dashboard.thalheim.io:3030/widgets/drunks  
+
+## Update firealarms
+
+```console
+$ curl http://dashboard.thalheim.io:3030/widgets/firealarms --data '{"alarm-date": "2018-10-13 11:30", "test-alarm-date": "2018-10-04 11:30"}'
 ```
 
 ## Update code of the day
